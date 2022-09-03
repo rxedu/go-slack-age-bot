@@ -1,4 +1,4 @@
-module github.com/rxedu/go-slack-age-bot/v1
+module github.com/rxedu/go-slack-age-bot
 
 go 1.19
 

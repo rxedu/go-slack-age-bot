@@ -1,4 +1,4 @@
-package pkg
+package goslackagebot
 
 import (
 	"context"
@@ -7,7 +7,7 @@ import (
 
 	"github.com/shomali11/slacker"
 
-	"github.com/rxedu/go-slack-age-bot/v1/internal"
+	"github.com/rxedu/go-slack-age-bot/internal"
 )
 
 func StartBot(botToken string, appToken string) {

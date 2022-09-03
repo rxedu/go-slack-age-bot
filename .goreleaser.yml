@@ -9,6 +9,7 @@ signs:
   - artifacts: checksum
 
 builds:
-  - main: cmd/main.go
+  - binary: goslackagebot
+    main: cmd/goslackagebot/main.go
     env:
       - CGO_ENABLED=0
