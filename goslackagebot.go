@@ -7,14 +7,14 @@ import (
 
 	"github.com/shomali11/slacker"
 
-	"github.com/rxedu/go-slack-age-bot/internal"
+	"github.com/rxedu/go-slack-age-bot/internal/commands"
 )
 
 func StartBot(botToken string, appToken string) {
 	bot := slacker.NewClient(botToken, appToken)
 	go printCommandEvents(bot.CommandEvents())
 
-	internal.RegisterCommands(bot)
+	commands.RegisterCommands(bot)
 
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
